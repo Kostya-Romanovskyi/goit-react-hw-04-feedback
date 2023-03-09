@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import Statistics from './Section-Feedback/Statistics/Statistics';
 import FeedbackOptions from './Section-Feedback/Feedback/FeedbackOptions';
 import Section from './Section-Feedback/Section/Section';
@@ -66,10 +65,4 @@ export default function App() {
         </div>
     );
 }
-
-App.propTypes = {
-    defaultProps: PropTypes.shape({
-        step: PropTypes.number.isRequired,
-        initialValue: PropTypes.number.isRequired
-    })
 }
